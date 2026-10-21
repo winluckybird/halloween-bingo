@@ -63,7 +63,9 @@ Visual test artifacts are saved under `test-output/`, which is excluded from pub
 
 ## SEO and deployment configuration
 
-The specified title, H1, description, and explanatory text are in `dist/index.html`. No fictional canonical domain is included. When selecting the final public domain, add its absolute canonical URL in the marked location, and add a sitemap / robots configuration for that host. No year appears in the route.
+The specified title, H1, description, and explanatory text are in `dist/index.html`. The production canonical is `https://halloween-bingo-bkg.pages.dev/`. `dist/sitemap.xml` lists that single page, and `dist/robots.txt` permits crawling and declares the sitemap. No year appears in the route.
+
+The Google Search Console HTML verification file supplied by the site owner is published at `/google2d1dd99d57463bc5.html`. Use a URL-prefix property for the full production HTTPS address, choose HTML file verification, and keep the file deployed after verification. After verification, submit `/sitemap.xml`; the verified site can also be imported into Bing Webmaster Tools. See `STRUCTURE.md` for the URLs and domain migration notes.
 
 ## Artwork and licenses
 
